@@ -1,0 +1,19 @@
+//partial sass file
+//files related to body html * etc
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  box-sizing: inherit;
+}
+
+html {
+  /* now 1 rem equals 10 px */
+  /* font-size: 10px;  */
+  /* 62.5% ;of 16px = 10px */
+  font-size: 62.5%;
+}
+
+

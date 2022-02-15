@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/icon-font.css" />
+  <link rel="stylesheet" href="css/icon-font.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <style>
+    .book {
+
+      margin-top: 3rem;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <title>Login | Natours</title>
+</head>
+
+<body>
+
+  <section class="section-login">
+    <div class="section-login--logo">
+
+      <img src="img/logo-white.png" alt="">
+      <p class="section-login--logo--name">Natours | Backend</p>
+    </div>
+
+
+    <section class="section-book">
+      <div class="row">
+        <div class="book">
+          <div class="book__form">
+            <form action="/login" class="form" method="post" autocomplete="off">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Login | admin
+                </h2>
+              </div>
+
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Name" id="name" name="name" required>
+                <label for="name" class="form__label">Name</label>
+              </div>
+
+              <div class="form__group">
+                <input type="password" class="form__input" placeholder="Password" id="password" name="pwd" required>
+                <label for="password" class="form__label">Password</label>
+              </div>
+
+
+
+              <div class="form__group">
+                <button class="btn btn--green">login &rarr;</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- TESTING PURPOSE -->
+  <!-- <form action="/admin" method="post">
+      <p>Enter yout text:</p>
+      <input type="text" value="text" name="text1" /><br />
+      <input type="password" value="password" name="pwd" /><br />
+      <input type="submit" />
+    </form> -->
+</body>
+
+</html>

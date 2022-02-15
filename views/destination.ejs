@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .section-stories {
+            padding: 0;
+        }
+
+        .section-logo {
+            text-align: center;
+        }
+
+        .logout {
+            background-color: rgb(236, 36, 36);
+        }
+
+        .logout::after {
+            background-color: rgb(236, 36, 36);
+        }
+
+        .hide {
+            visibility: hidden;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .heading-tertiary {
+            font-size: 2rem;
+        }
+
+    </style>
+    <title>Database | Natours</title>
+</head>
+
+<body>
+    <section class="section-logo">
+        <img src="img/logo-green-1x.png" alt="">
+    </section>
+    <section class="section-stories">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                Customer Database
+            </h2>
+        </div>
+
+        <% posts.forEach(function(post){ %>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/avatars/<%=post.avatar%>.png" alt="mary smith" class="story__img">
+                        <figcaption class="story__caption">
+                            <%=post.name%>
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small center">
+                            Email: <%=post.email%> <br>
+                                Group: <%= post.group %>
+                        </h3>
+                        <p>
+                            <span class="hide">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio totam obcaecati esse
+                                at
+                                neque
+                                dicta libero
+                                alias similique recusandae, fuga repellendus officia! Quasi harum fugit eos
+                                perferendis
+                                magnam
+                                aspernatur
+                                eaque.
+                                repellendus officia! Quasi harum fugit eos perferendis
+                            </span>
+                        </p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <% }) %> -->
+
+                <div class="u-center-text u-margin-top-huge">
+                    <form action="/admin" method="get">
+                        <button class="btn btn--green">Create new admin</button>
+
+                    </form>
+                </div>
+                <div class="u-center-text u-margin-top-huge">
+                    <form action="/logout" method="post">
+                        <button class="btn btn--green logout">Log Out</button>
+
+                    </form>
+                </div>
+    </section>
+</body>
+
+</html>

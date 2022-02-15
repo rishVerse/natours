@@ -1,0 +1,25 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Natours Website for the minor project",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss files/css/style.css -w"
+  },
+  "author": "Rishabh Dubey & Rishika Bajaj",
+  "license": "ISC",
+  "engines": {
+    "node": "14.17.5"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "md5": "^2.3.0",
+    "mongoose": "^6.0.12"
+  }
+}
